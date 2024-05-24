@@ -1,0 +1,47 @@
+@import './reset';
+
+.container {
+  max-width: 1270px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: var(--font-manrope);
+  background-color: #efefd0;
+}
+
+.def-title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 42px;
+  color: #242423;
+
+  & span {
+    color: #ef8354;
+  }
+}
+
+@media (max-width:1200px) {
+  .def-title {
+    font-size: 38px;
+  }
+}
+
+@media (max-width:991px) {
+  .def-title {
+    font-size: 30px;
+  }
+}
+
+@media (max-width:768px) {
+  .def-title {
+    font-size: 23px;
+  }
+}
+
+@media (max-width:500px) {
+  .def-title {
+    font-size: 20px;
+  }
+}
