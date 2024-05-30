@@ -1,0 +1,161 @@
+.method {
+  margin-bottom: 57px;
+  &__title {
+    color: #242423;
+    margin-bottom: 60px;
+  }
+  &__orangeSpan {
+    color: #ef8354;
+  }
+  &__content {
+    display: flex;
+    gap: 60px;
+    justify-content: flex-end;
+    padding: 0 40px;
+  }
+  &__about {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    width: 100%;
+    max-width: 598px;
+  }
+  &__question {
+    border-radius: 15px;
+    background-color: #46494c;
+
+    padding: 20px 10px;
+    text-align: center;
+  }
+  &__subTitle {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 38px;
+    color: #fffffc;
+  }
+  &__text {
+    border-radius: 15px;
+
+    height: fit-content;
+    background: #fffffc;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 21px;
+    color: #242423;
+    padding: 20px 20px 0 20px;
+  }
+  &__text h4 {
+    font-weight: 500;
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  &__text > p {
+    margin-bottom: 20px;
+  }
+  &__photo {
+    border-radius: 15px;
+    width: 100%;
+    max-width: 436px;
+    height: 426px;
+    background: url(../../../public/images/Akylai__method.png) center/cover
+      no-repeat;
+  }
+}
+
+@media (max-width: 1146px) {
+  .method {
+    &__content {
+      padding: 0;
+      margin-bottom: 20px;
+    }
+    &__question {
+      padding-top: 25px;
+    }
+    &__subTitle {
+      font-size: 30px;
+    }
+    &__text {
+      font-size: 20px;
+    }
+
+  }
+}
+@media (max-width: 991px) {
+  .method {
+    &__content {
+      gap: 20px;
+    }
+    &__question {
+      padding-top: 27px;
+    }
+    &__subTitle {
+      font-size: 27px;
+    }
+    &__about {
+      gap: 20px;
+    }
+    &__photo {
+      border-radius: 15px;
+      width: 100%;
+      max-width: 328px;
+      height: 439px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .method {
+    &__content {
+      flex-wrap: wrap;
+    }
+    &__about {
+     max-width: 100%;
+    }
+    &__photo {
+     max-width: 100%;
+     height: 317px;
+    }
+    &__question {
+      padding-top: 27px;
+    }
+    &__subTitle {
+      font-size: 30px;
+    }
+    &__text {
+      font-size: 18px;
+
+    }
+    &__title {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .method {
+    &__question {
+      height: 57px;
+      padding-top: 16px;
+    }
+    &__subTitle {
+      font-size: 19px;
+    }
+    &__text {
+      font-size: 16px;
+
+    }
+  }
+}
+@media (max-width: 315px) {
+  .method {
+    &__question {
+      height: 57px;
+      padding-top: 18px;
+    }
+    &__subTitle {
+      font-size: 16px;
+    }
+
+  }
+}
+
+
