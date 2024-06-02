@@ -21,9 +21,9 @@
   left: 20px;
   right: 0;
   bottom: 0;
-}
+} 
 
-.technique {
+.advantages {
   margin: 30px;
   &__title {
     font-family: var(--second-family);
@@ -93,7 +93,7 @@
 }
 
 @media (max-width: 991px) {
-  .technique {
+  .advantages {
     &__gridFlex1 > &__card:nth-child(2n)::before {
       @include dot2;
       width: 24px;
@@ -123,7 +123,7 @@
   }
 }
 @media (max-width: 768px) {
-  .technique {
+  .advantages {
     &__grid {
       flex-wrap: wrap;
       gap: 10px;
@@ -135,7 +135,7 @@
   }
 }
 @media (max-width: 500px) {
-  .technique {
+  .advantages {
     &__title {
         margin-bottom: 15px;
     }
