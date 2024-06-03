@@ -57,8 +57,13 @@
     width: 100%;
     max-width: 436px;
     height: 426px;
-    background: url(../../../public/images/Akylai__method.png) center/cover
-      no-repeat;
+    overflow: hidden;
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
   }
 }
 

@@ -15,7 +15,7 @@ export const Hero = () => {
             простой, быстрый и эффективный метод, который действительно работает
           </p>
           <div className={styles.hero__imgWrapper}>
-            <Image src={heroImg} alt=''/>
+            <Image src={heroImg} alt='фоновое изображение с девушкой на берегу озера' priority={true} />
           </div>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Method.module.scss";
 import Image from "next/image";
-import Akylai from '@/public/images/Akylai__method.png'
+import photo from '@/public/images/Akylai__method.png'
 
 export const Method = () => {
   return (
@@ -36,6 +36,7 @@ export const Method = () => {
             </div>
           </div>
           <div className={styles.method__photo}>
+            <Image src={photo} alt='фотография автора курса' priority={false} />
           </div>
         </div>
       </div>
