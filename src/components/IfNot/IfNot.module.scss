@@ -23,11 +23,12 @@
     font-size: 38px;
   }
 }
-.card:nth-child(2){
+.card:nth-child(2) {
   background-color: #fffffc;
 }
 .ifnot {
-  margin: 30px;
+  padding: 60px 0;
+
   &__title {
     font-family: var(--font-prata);
     color: #242423;
@@ -69,14 +70,53 @@
     max-width: 661px;
   }
 }
+.payment {
+  gap: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ef8354;
+  border-radius: 15px;
+  padding: 20px 30px;
+  color: #fff;
+  max-width: 695px;
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 1.3em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 30px auto 0;
 
-
+  & span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & svg {
+      width: 40px;
+      height: 40px;
+    }
+  }
+}
 
 @media (max-width: 991px) {
   .card {
     font-size: 20px;
     &__title {
       font-size: 24px;
+    }
+  }
+  .payment {
+    border-radius: 10px;
+    padding: 15px 20px;
+    max-width: 500px;
+    font-size: 24px;
+
+    & span {
+      & svg {
+        width: 30px;
+        height: 30px;
+      }
     }
   }
 }
@@ -103,9 +143,23 @@
       font-size: 26px;
     }
   }
+  .payment {
+    border-radius: 10px;
+    padding: 12px;
+    max-width: 339px;
+    font-size: 18px;
+
+    & span {
+      & svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
 }
 @media (max-width: 500px) {
   .ifnot {
+    padding: 25px 0;
     &__title {
       margin-bottom: 15px;
     }
@@ -117,6 +171,17 @@
     }
     &__title1 {
       font-size: 18px;
+    }
+  }
+  .payment {
+    font-size: 14px;
+    margin: 0px auto 20px;
+
+    & span {
+      & svg {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 }

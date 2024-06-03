@@ -6,7 +6,6 @@ import { Review } from "../components/Review/Review";
 import { Price } from "../components/Price/Price";
 import { Advantages } from "../components/Advantages/Advantages";
 import { IfNot } from "../components/IfNot/IfNot";
-import { Form } from "../components/Form/Form";
 
 export default function Home() {
   return (
@@ -19,7 +18,6 @@ export default function Home() {
       <Advantages />
       <Price />
       <IfNot />
-      <Form />
     </main>
-  )
+  );
 }
