@@ -1,84 +1,63 @@
-// @mixin slides {
-//   border-radius: 20px;
-//   object-fit: contain;
-//   position: relative;
-// }
+.swiper-wrapper {
+  height: 420px;
+}
+.swiper-slide {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  transition: all 0.4s;
+}
+.swiper-slide-active {
+  opacity: 1;
+}
 
-// #review {
-//   .swiper {
-//     // height: 300px;
+.swiper-button-next {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translateY(-22%) rotate(180deg);
 
-//     &-button-prev {
-//       width: 75px;
-//       height: 75px;
-//       border-radius: 50%;
-//       background: url("../../../public/images/Arrow left.png") center/cover
-//         no-repeat;
-//     }
-//     &-button-prev::after {
-//       display: none;
-//     }
-//     &-button-next {
-//       width: 75px;
-//       height: 75px;
-//       border-radius: 50%;
-//       transform: rotate(180deg);
-//       background: url("../../../public/images/Arrow left.png") center/cover
-//         no-repeat;
-//     }
-//     &-button-next::after {
-//       display: none;
-//     }
-//     &-slide {
-//       width: fit-content;
-//     }
-//     &-wrapper {
-//       justify-content: center;
-//       align-items: center;
-//     }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    background: url("../../../public/images/arrow.svg") no-repeat center/contain;
+  }
+}
+.swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #fff;
+  transform: translateY(-22%);
 
-//     .swiper-slide {
-//       background-color: #fff;
-//       &:nth-child(even) {
-//         // width: 420px !important;
-//         height: 270px !important;
-//         @include slides();
-//       }
-//       &:nth-child(odd) {
-//         @include slides();
-//         // width: 300px !important;
-//         height: 420px !important;
-//       }
-//     }
-//   }
-// }
-// // [data-swiper-slide-index="0"] {
-// //     no-repeat;
-// //     @include slides()
-// // }
-// // [data-swiper-slide-index="1"] {
+  &::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    background: url("../../../public/images/arrow.svg") no-repeat center/contain;
+  }
+}
 
-// //     no-repeat;
-// //     @include slides()
-// // }
-// // [data-swiper-slide-index="2"] {
-// //   width: 300px !important;
-// //   height: 420px !important;
-// //   background: url("../../../public/images/Review\ 2.png") center/contain
-// //     no-repeat;
-// //     @include slides()
-// // }
-// // [data-swiper-slide-index="3"] {
-// //   width: 420px !important;
-// // height: 270px !important;
-// //   background: url("../../../public/images/Review\ 3.png") center/contain
-// //     no-repeat;
-// // @include slides()
-// // }
-// // [data-swiper-slide-index="4"] {
-// //     width: 300px !important;
-// //     height: 420px !important;
-// //     background: url("../../../public/images/Review\ 2.png") center/contain
-// //       no-repeat;
-// //       @include slides()
-// //   }
+@media (max-width: 768px) {
+  .swiper-button-next,
+  .swiper-button-prev {
+    width: 50px;
+    height: 50px;
+    transform: translateY(-3%);
+  }
+  .swiper-button-next {
+    transform: translateY(-3%) rotate(180deg);
+  }
+}
