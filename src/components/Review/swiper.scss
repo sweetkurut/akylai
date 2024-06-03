@@ -1,0 +1,84 @@
+// @mixin slides {
+//   border-radius: 20px;
+//   object-fit: contain;
+//   position: relative;
+// }
+
+// #review {
+//   .swiper {
+//     // height: 300px;
+
+//     &-button-prev {
+//       width: 75px;
+//       height: 75px;
+//       border-radius: 50%;
+//       background: url("../../../public/images/Arrow left.png") center/cover
+//         no-repeat;
+//     }
+//     &-button-prev::after {
+//       display: none;
+//     }
+//     &-button-next {
+//       width: 75px;
+//       height: 75px;
+//       border-radius: 50%;
+//       transform: rotate(180deg);
+//       background: url("../../../public/images/Arrow left.png") center/cover
+//         no-repeat;
+//     }
+//     &-button-next::after {
+//       display: none;
+//     }
+//     &-slide {
+//       width: fit-content;
+//     }
+//     &-wrapper {
+//       justify-content: center;
+//       align-items: center;
+//     }
+
+//     .swiper-slide {
+//       background-color: #fff;
+//       &:nth-child(even) {
+//         // width: 420px !important;
+//         height: 270px !important;
+//         @include slides();
+//       }
+//       &:nth-child(odd) {
+//         @include slides();
+//         // width: 300px !important;
+//         height: 420px !important;
+//       }
+//     }
+//   }
+// }
+// // [data-swiper-slide-index="0"] {
+// //     no-repeat;
+// //     @include slides()
+// // }
+// // [data-swiper-slide-index="1"] {
+
+// //     no-repeat;
+// //     @include slides()
+// // }
+// // [data-swiper-slide-index="2"] {
+// //   width: 300px !important;
+// //   height: 420px !important;
+// //   background: url("../../../public/images/Review\ 2.png") center/contain
+// //     no-repeat;
+// //     @include slides()
+// // }
+// // [data-swiper-slide-index="3"] {
+// //   width: 420px !important;
+// // height: 270px !important;
+// //   background: url("../../../public/images/Review\ 3.png") center/contain
+// //     no-repeat;
+// // @include slides()
+// // }
+// // [data-swiper-slide-index="4"] {
+// //     width: 300px !important;
+// //     height: 420px !important;
+// //     background: url("../../../public/images/Review\ 2.png") center/contain
+// //       no-repeat;
+// //       @include slides()
+// //   }
