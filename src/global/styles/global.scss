@@ -1,4 +1,10 @@
-@import './reset';
+@import "./reset";
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Prata&display=swap");
+
+:root {
+  --font-family: "Manrope", sans-serif;
+  --second-family: "Prata", sans-serif;
+}
 
 html {
   scroll-behavior: smooth;
@@ -25,25 +31,25 @@ body {
   }
 }
 
-@media (max-width:1200px) {
+@media (max-width: 1200px) {
   .def-title {
     font-size: 38px;
   }
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
   .def-title {
     font-size: 30px;
   }
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
   .def-title {
     font-size: 28px;
   }
 }
 
-@media (max-width:500px) {
+@media (max-width: 500px) {
   .def-title {
     font-size: 25px;
   }
