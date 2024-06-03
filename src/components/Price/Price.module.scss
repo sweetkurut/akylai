@@ -20,7 +20,7 @@
     width: 100%;
     max-width: 592px;
     height: fit-content;
-    font-family: var(--font-family);
+    font-family: var(--font-manrope);
     font-weight: 400;
     font-size: 26px;
     color: #000;
@@ -38,7 +38,7 @@
     height: fit-content;
     text-align: center;
     background: #fffffc;
-    font-family: var(--font-family);
+    font-family: var(--font-manrope);
     font-weight: 400;
     font-size: 21px;
     color: #242423;
@@ -48,13 +48,13 @@
   }
   &__text h3 {
     margin: 40px 0;
-    font-family: var(--second-family);
+    font-family: var(--font-prata);
     font-weight: 400;
     font-size: 38px;
     color: #242423;
   }
   &__text p {
-    font-family: var(--font-family);
+    font-family: var(--font-manrope);
     font-weight: 500;
     font-size: 26px;
     color: #000;
@@ -62,7 +62,7 @@
   &__text ul {
     margin-top: 15px;
     text-align: left;
-    font-family: var(--font-family);
+    font-family: var(--font-manrope);
     font-weight: 400;
     font-size: 22px;
     color: #242423;
@@ -73,7 +73,7 @@
 
   &__remember {
     position: relative;
-    font-family: var(--font-family);
+    font-family: var(--font-manrope);
     font-weight: 500;
     font-size: 26px;
     color: #242423;

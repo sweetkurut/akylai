@@ -1,5 +1,3 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 import { Hero } from "@/src/components/Hero/Hero";
 import { Technique } from "../components/Technique/Technique";
 import { Reason } from "../components/Reason/Reason";
@@ -12,7 +10,7 @@ import { Form } from "../components/Form/Form";
 
 export default function Home() {
   return (
-    <main className={styles.main}>
+    <main>
       <Hero />
       <Technique />
       <Reason />
@@ -23,5 +21,5 @@ export default function Home() {
       <IfNot />
       <Form />
     </main>
-  );
+  )
 }

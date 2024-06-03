@@ -44,7 +44,7 @@ export const Price = () => {
               <p>
                 Ну а если Вы полны решимости выйти из замкнутого круга , из
                 петли - тогда буду рада передать Вам ценную информацию в своем
-                мини-курсе <span>"Трансформация"</span>
+                мини-курсе <span>&quot;Трансформация&quot;</span>
               </p>
             </div>
             <div className={styles.price__remember}>
@@ -57,5 +57,5 @@ export const Price = () => {
         </div>
       </div>
     </section>
-  );
-};
+  )
+}

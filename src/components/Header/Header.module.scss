@@ -25,7 +25,7 @@
 }
 
 @mixin fonts {
-  font-family: var(--font-family);
+  font-family: var(--font-manrope);
   font-weight: 400;
   font-size: 22px;
 }
@@ -163,7 +163,7 @@
       border-radius: 10px;
       width: 104px;
       height: 34px;
-      font-family: var(--font-family);
+      font-family: var(--font-manrope);
       font-size: 16px;
     }
   }

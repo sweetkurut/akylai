@@ -40,7 +40,7 @@ export const Technique = () => {
             </div>
             <div className={`${styles.technique__card} ${styles.card}`}>
               <h3 className={styles.card__title}>Финансовых блоков</h3>
-              <p className={styles.card__text}>Денег хватает лишь на базовые потребности, "не везёт", родовая программа бедности и т.д.</p>
+              <p className={styles.card__text}>Денег хватает лишь на базовые потребности, &quot;не везёт&quot;, родовая программа бедности и т.д.</p>
             </div>
             <div className={`${styles.technique__card} ${styles.card}`}>
               <h3 className={styles.card__title}>Страх осуждения </h3>

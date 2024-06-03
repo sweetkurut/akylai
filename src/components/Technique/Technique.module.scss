@@ -26,7 +26,7 @@
 .technique {
   margin: 30px;
   &__title {
-    font-family: var(--second-family);
+    font-family: var(--font-prata);
     color: #242423;
     width: 100%;
     max-width: 770px;
@@ -78,13 +78,13 @@
   border-radius: 20px;
   background: #f7c59f;
   padding: 20px 35px 20px 60px;
-  font-family: var(--font-family);
+  font-family: var(--font-manrope);
   font-weight: 400;
   font-size: 22px;
   color: #242423;
 
   &__title {
-    font-family: var(--font-family);
+    font-family: var(--font-manrope);
     font-weight: 500;
     font-size: 26px;
     color: #242423;

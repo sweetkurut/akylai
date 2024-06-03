@@ -1,5 +1,5 @@
 @mixin fonts {
-  font-family: var(--font-family);
+  font-family: var(--font-manrope);
   font-weight: 400;
   font-size: 22px;
   line-height: 120%;
@@ -13,7 +13,7 @@
   width: 182px;
   height: 73px;
   background: #f7c59f;
-  font-family: var(--font-family);
+  font-family: var(--font-manrope);
   font-weight: 400;
   font-size: 24px;
   color: #242423;
@@ -26,7 +26,7 @@
   }
 
   &__secondTitle {
-    font-family: var(--second-family);
+    font-family: var(--font-prata);
     font-weight: 400;
     font-size: 42px;
     color: #242423;
@@ -92,7 +92,7 @@
     padding: 20px 50px;
   }
   &__nothing {
-    font-family: var(--second-family);
+    font-family: var(--font-prata);
     font-weight: 400;
     font-size: 38px;
     color: #242423;
