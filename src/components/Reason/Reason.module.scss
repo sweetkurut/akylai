@@ -67,6 +67,8 @@
     display: flex;
     gap: 60px;
     justify-content: center;
+    margin-bottom: 40px;
+
   }
   &__cards {
     display: flex;
@@ -131,6 +133,10 @@
     }
     &__nothing {
       font-size: 26px;
+    }
+    &__cardsLine2 {
+    margin-bottom: 20px;
+
     }
   }
 }
