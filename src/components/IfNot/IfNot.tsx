@@ -1,49 +1,63 @@
-"use client"
+"use client";
 
 import axios from "axios";
 import styles from "./IfNot.module.scss";
 import { useState } from "react";
-import { mask1 } from "./js-inputmask.js"
-  mask1
-export const IfNot = () => {
+import { mask1 } from "./js-inputmask.js";
+mask1;
 
+export const IfNot = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: ''
+    fullName: "",
+    email: "",
+    phone: "",
   });
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(null);
+  const [success, setSuccess] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
-      [name]: value
+      [name]: value,
     });
   };
 
-  const { name, email, phone } = formData;
+  const sendData = async (e) => {
+    e.preventDefault();
+    setIsLoading(true);
+    setError(null);
+    setSuccess(false);
 
-  const reqBody = [name, email, phone];
+    const reqBody = {
+      fullName: formData.fullName,
+      email: formData.email,
+      phone: formData.phone,
+    };
 
-
-
-
-  const sendData = async(e) => {
-e.preventDefault()
-    console.log(reqBody);
-    
     try {
-      const resp = await axios.post("http://192.168.68.154:3003/applications", reqBody)   
-      console.log(resp);
+      const response = await axios.post(
+        "http://localhost:3003/applications",
+        reqBody,
+        {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log(response);
+      setSuccess(true);
     } catch (error) {
-      console.error(error);
-      
+      console.error("There was an error!", error);
+      setError(error.message);
+    } finally {
+      setIsLoading(false);
     }
-  }
-
-  
+  };
 
   return (
-    <section className={styles.ifnot}  id="form">
+    <form className={styles.ifnot} id="form">
       <div className="container">
         <div className={styles.ifnot__firstCard}>
           <div className={styles.ifnot__cardTitle1}>
@@ -65,37 +79,56 @@ e.preventDefault()
               Быстрые, эффективные трансформации
             </h3>
             <p className={styles.card__text}>
-              Без хитросплетенных схем которые нужно заучивать. Гениальность
-              в простоте
+              Без хитросплетенных схем которые нужно заучивать. Гениальность в
+              простоте
             </p>
           </div>
         </div>
         <div id={styles.msform}>
-          <form className={styles.form} onSubmit={sendData} >
+          <form className={styles.form} onSubmit={sendData}>
             <h2 className={styles.fs_title}>Оставьте заявку</h2>
-            
-            <input type="text" name="name" placeholder="Имя"  onInput={handleChange} required />
-            <input type="email" name="email" placeholder="Email" value={email} required onInput={handleChange} />
+
+            <input
+              type="text"
+              name="fullName"
+              placeholder="Имя"
+              onChange={handleChange}
+              value={formData.fullName}
+              required
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              onChange={handleChange}
+              value={formData.email}
+              required
+            />
             <input
               type="tel"
               placeholder="Телефон"
               name="phone"
-              value={phone}
-              onInput={handleChange} 
+              onChange={handleChange}
+              value={formData.phone}
               className="tel"
               required
             />
-            <input
+            <button
               type="submit"
               name="next"
               className={`${styles.action_button} ${styles.next}`}
-              
-              value="Отправить заявку"
-              
-            />
+              disabled={isLoading}
+            >
+              Отправить заявку
+            </button>
           </form>
+          {isLoading && <p>Отправка данных...</p>}
+          {error && <p style={{ color: "red" }}>Ошибка: {error}</p>}
+          {success && (
+            <p style={{ color: "green" }}>Заявка успешно отправлена!</p>
+          )}
         </div>
       </div>
-    </section>
+    </form>
   );
 };
