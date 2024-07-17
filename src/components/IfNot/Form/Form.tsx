@@ -23,10 +23,10 @@ const Form = () => {
   };
 
   const sendData = async (e) => {
-    e.preventDefault();
     setIsLoading(true);
     setError(null);
     setSuccess(false);
+    e.preventDefault();
 
     const reqBody = {
       fullName: formData.fullName,
@@ -86,8 +86,8 @@ const Form = () => {
             required
           />
           <button
-            type="submit"
-            name="next"
+            // type="submit"
+            // name="next"
             className={`${styles.action_button} ${styles.next}`}
             disabled={isLoading}
           >

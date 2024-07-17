@@ -7,7 +7,7 @@ mask1;
 
 export const IfNot = () => {
   return (
-    <form className={styles.ifnot} id="form">
+    <section className={styles.ifnot} id="form">
       <div className="container">
         <div className={styles.ifnot__firstCard}>
           <div className={styles.ifnot__cardTitle1}>
@@ -36,6 +36,6 @@ export const IfNot = () => {
         </div>
         <Form />
       </div>
-    </form>
+    </section>
   );
 };
