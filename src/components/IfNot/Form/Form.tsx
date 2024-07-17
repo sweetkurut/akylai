@@ -1,10 +1,10 @@
 "use client";
 
-import React, { useState } from "react";
+import { ChangeEvent, FC, FormEvent, useState } from "react";
 import styles from "./form.module.scss";
 import axios from "axios";
 
-const Form = () => {
+const Form: FC = () => {
   const [formData, setFormData] = useState({
     fullName: "",
     login: "",
@@ -14,7 +14,7 @@ const Form = () => {
   const [error, setError] = useState(null);
   const [success, setSuccess] = useState(false);
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
     setFormData({
       ...formData,
@@ -22,7 +22,7 @@ const Form = () => {
     });
   };
 
-  const sendData = async (e) => {
+  const sendData = async (e: FormEvent<HTMLFormElement>) => {
     setIsLoading(true);
     setError(null);
     setSuccess(false);
@@ -46,7 +46,7 @@ const Form = () => {
       );
       console.log(response);
       setSuccess(true);
-    } catch (error) {
+    } catch (error: any) {
       console.error("There was an error!", error);
       setError(error.message);
     } finally {
