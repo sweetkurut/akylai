@@ -86,8 +86,6 @@ const Form = () => {
             required
           />
           <button
-            // type="submit"
-            // name="next"
             className={`${styles.action_button} ${styles.next}`}
             disabled={isLoading}
           >
