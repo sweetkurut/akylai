@@ -1,9 +1,7 @@
 "use client";
 
 import styles from "./IfNot.module.scss";
-import { mask1 } from "./js-inputmask.js";
 import Form from "./Form/Form";
-mask1;
 
 export const IfNot = () => {
   return (
