@@ -1,80 +1,8 @@
-.card {
-  border-radius: 20px;
-  background: #f7c59f;
-  padding: 20px;
-  font-family: var(--font-manrope);
-  font-weight: 400;
-  font-size: 22px;
-  color: #242423;
-  width: 100%;
-  max-width: 610px;
-  margin-bottom: 30px;
-
-  &__title {
-    font-family: var(--font-manrope);
-    font-weight: 500;
-    font-size: 26px;
-    color: #242423;
-    margin-bottom: 5px;
-  }
-  &__title1 {
-    color: #fffffc;
-    font-weight: 400;
-    font-size: 38px;
-  }
-}
-.card:nth-child(2) {
-  background-color: #fffffc;
-}
-.ifnot {
-  padding: 60px 0;
-
-  &__title {
-    font-family: var(--font-prata);
-    color: #242423;
-    width: 100%;
-    max-width: 770px;
-    margin-bottom: 40px;
-  }
-  &__orangeSpan {
-    color: #ef8354;
-  }
-  &__grid {
-    display: flex;
-    gap: 20px;
-  }
-  &__firstCard {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 40px;
-  }
-  &__cardTitle {
-    border-radius: 15px;
-    width: 100%;
-    max-width: 465px;
-    height: fit-content;
-    text-align: center;
-    background: #46494c;
-  }
-  &__cardTitle1 {
-    height: fit-content;
-    text-align: center;
-    background: #46494c;
-    width: 100%;
-    border-radius: 20px;
-    padding: 20px;
-    font-family: var(--font-manrope);
-    font-weight: 400;
-    font-size: 22px;
-    width: 100%;
-    max-width: 661px;
-  }
-}
-
 #msform {
   width: 900px;
   margin: 25px auto;
   text-align: center;
+  // position: relative;
 }
 #msform form {
   background: white;
@@ -106,25 +34,28 @@
   color: #2c3e50;
   font-size: 15px;
   outline: none;
+  border-radius: 5px;
 }
 /*buttons*/
 #msform .action_button {
   width: fit-content;
   font-family: var(--font-family);
-  background-color: #ef8354;
-	font-weight: bold;
-	color: white;
-	border: 0 none;
-	border-radius: 10px;
-	cursor: pointer;
-	padding: 10px;
-	margin: 10px 5px;
-  text-decoration: none;
-  font-size: 14px;
+  background: #46494c;
+  font-weight: bold;
+  color: white;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: 0.5s all;
 }
 #msform .action_button:hover,
 #msform .action_button:focus {
-  box-shadow: 0 0 0 2px white, 0 0 0 3px #27ae60;
+  background: transparent;
+  border: solid 1px #46494c;
+  color: #46494c;
 }
 .form input::placeholder {
   font-family: var(--font-family);
@@ -235,5 +166,14 @@
     &__title1 {
       font-size: 16px;
     }
+  }
+
+  .action_button {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #msform inputsdc {
+    font-size: 14px;
   }
 }
