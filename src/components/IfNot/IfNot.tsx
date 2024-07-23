@@ -16,19 +16,14 @@ export const IfNot = () => {
         </div>
         <div className={styles.ifnot__grid}>
           <div className={`${styles.ifnot__card} ${styles.card}`}>
-            <h3 className={styles.card__title}>Вечное знание</h3>
             <p className={styles.card__text}>
-              Знания остаются с Вами на всю жизнь. Вы можете использовать его в
-              любых ситуациях
+            Для этого я подробно рассказываю в трёх блоках,  как использовать данную технику. Она очень проста, но очень мощная. 
+            И если Вы способны чувствовать, то сработает на 100% 
             </p>
           </div>
           <div className={`${styles.ifnot__card} ${styles.card}`}>
-            <h3 className={styles.card__title}>
-              Быстрые, эффективные трансформации
-            </h3>
             <p className={styles.card__text}>
-              Без хитросплетенных схем которые нужно заучивать. Гениальность в
-              простоте
+
             </p>
           </div>
         </div>
