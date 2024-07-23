@@ -23,7 +23,7 @@ export const IfNot = () => {
           </div>
           <div className={`${styles.ifnot__card} ${styles.card}`}>
             <p className={styles.card__text}>
-
+            За 2499 рублей Вы получите точечное знание без лишней воды , которое как верный Ваш помощник будет помогать во всех сферах детятельности на протяжении всей Вашей жизни 
             </p>
           </div>
         </div>
